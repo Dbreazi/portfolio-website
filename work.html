@@ -6,34 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dario Beavis - Portfolio</title>
     <link rel="shortcut icon" href="https://www.wikipedia.org/static/favicon/wikipedia.ico">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <style>
+        .grid_item img, .grid_item video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .grid_item video {
+            max-width: 400px;
+        }
+
+        .grid_item {
+            max-width: 600px;
+            margin: 0 auto 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+
+        .vertical-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
     <header class="page-header">
-        <img src="img/dario-beavis-site-logo.png" alt="dario beavis logo" class="page-header_item">
         <nav class="main-navigation page-header_item">
             <ul role="menubar" class="navigation-list">
                 <li role="presentation">
                     <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
                 </li>
-
                 <li role="presentation">
                     <a href="about.html" role="menuitem" class="navigation-list_item" aria-label="About Dario">About</a>
                 </li>
-
                 <li role="presentation">
-                    <a href="work.html" role="menuitem"
-                        class="navigation-list_item navigation-list_item--active">Work</a>
+                    <a href="work.html" role="menuitem" class="navigation-list_item navigation-list_item--active">Work</a>
                 </li>
-
                 <li role="presentation">
                     <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
                 </li>
@@ -45,82 +60,60 @@
         <div>
             <h1>Work</h1>
         </div>
-        <div class="grid">
+        <div class="vertical-list">
             <div class="grid_item">
                 <h2>Meet App</h2>
-                <p>
-                    A React-based web application that allows users to view and filter events by city, track the number of events, and explore event genres. This app integrates with the Google Calendar API and offers a mobile-friendly design.
-                </p>
+                <p>A React-based web application to view and filter events by city, track events, and explore genres.</p>
                 <a href="https://dbreazi.github.io/meet" target="_blank">See the App in action</a><br> 
                 <a href="https://github.com/Dbreazi/meet" target="_blank">View GitHub Repository</a>
-                <div class="grid_overlay">
-                    <h3>Project Details</h3>
-                    <p>This web app allows users to:</p>
-                    <ul>
-                        <li>View and filter events by city.</li>
-                        <li>Adjust the number of events displayed.</li>
-                        <li>Explore event genres via charts.</li>
-                        <li>Responsive design for desktop and mobile.</li>
-                    </ul>
-                    <p><strong>Tech Used:</strong> React, Google Calendar API, JavaScript, CSS, HTML, Bootstrap</p>
-                </div>
-                <img src="img/meet_app_ss.png" alt="Screenshot of Meet App" style="width: 100%; height: auto; margin-top: 10px;">
+                <p><strong>Tech Used:</strong> React, Google Calendar API, JavaScript, CSS, HTML, Bootstrap</p>
+                <img src="img/meet_app_ss.png" alt="Screenshot of Meet App">
             </div> 
-            
+
             <div class="grid_item">
-                <h2>Project 2</h2>
-                <p>
-                    Product 2 description goes here.
-                </p>
-                <a href="#">View Project on Github</a>
-                <div class="grid_overlay">
-                    <h3>Project Details</h3>
-                    <p>Description of the project's features.</p>
-                </div>
+                <h2>Pokédex App</h2>
+                <p>A simple web application displaying Pokémon details fetched from the Pokémon API.</p>
+                <a href="https://dbreazi.github.io/Pokedex-app" target="_blank">See the App in Action</a><br>
+                <a href="https://github.com/Dbreazi/Pokedex-app" target="_blank">View GitHub Repository</a>
+                <p><strong>Tech Used:</strong> HTML, CSS (Bootstrap 4.3.1), JavaScript (ES6), Pokémon API</p>
+                <img src="img/pikachu.png" alt="Pikachu Screenshot">
             </div>
+
             <div class="grid_item">
-                <h2>Project 3</h2>
-                <p>
-                    Product 3 description goes here. 
-                </p>
-                <a href="#">View Project on Github</a>
-                <div class="grid_overlay">
-                    <h3>Project Details</h3>
-                    <p>Description of the project's features.</p>
-                </div>
+                <h2>myFlix React App</h2>
+                <p>The myFlix React app allows users to browse, view, and manage their favorite films with a sleek UI.</p>
+                <a href="https://myflix0.netlify.app/" target="_blank">See the App in Action</a><br>
+                <a href="https://github.com/Dbreazi/myFlix-client" target="_blank">View GitHub Repository</a>
+                <p><strong>Tech Used:</strong> React, React Router, JavaScript (ES2015+), Bootstrap, SCSS, Parcel, RESTful API</p>
+                <img src="img/Myflix_React.png" alt="Screenshot of myFlix React App">
             </div>
+
             <div class="grid_item">
-                <h2>Project 4</h2>
-                <p>
-                    Product 4 description goes here. 
-                </p>
-                <a href="#">View Project on Github</a>
-                <div class="grid_overlay">
-                    <h3>Project Details</h3>
-                    <p>Description of the project's features.</p>
-                </div>
+                <h2>myFlix Angular App</h2>
+                <p>The MyFlix Angular Client is a single-page, responsive movie web application built with Angular.</p>
+                <a href="https://dbreazi.github.io/myFlix-Angular-Updated1/movies" target="_blank">See the App in Action</a><br>
+                <a href="https://github.com/Dbreazi/myFlix-Angular-Updated1" target="_blank">View GitHub Repository</a>
+                <p><strong>Tech Used:</strong> Angular 18, Angular Material, TypeDoc, TypeScript, RxJS, HTML, SCSS</p>
+                <img src="img/myflix_angular.png" alt="Screenshot of myFlix Angular App">
             </div>
+
             <div class="grid_item">
-                <h2>Project 5</h2>
-                <p>
-                    Product 5 description goes here. 
-                </p>
-                <a href="#">View Project on Github</a>
-                <div class="grid_overlay">
-                    <h3>Project Details</h3>
-                    <p>Description of the project's features.</p>
-                </div>
+                <h2>React Native Chat App</h2>
+                <p>A cross-platform mobile chat application built with React Native, designed for real-time messaging, image sharing, and location exchange.</p>
+                <a href="https://github.com/Dbreazi/chat-app" target="_blank">View GitHub Repository</a>
+                <p><strong>Tech Used:</strong> React Native, Expo, Firebase (Firestore & Storage), Gifted Chat, AsyncStorage, React Native Maps, ImagePicker</p>
+                <video controls>
+                    <source src="https://coach-courses-us.s3.amazonaws.com/exercises/1126/48971/c867832a93d9ecadbc8d9fa04bad1218/Task-5.5-V2.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
             </div>
+
             <div class="grid_item">
-                <h2>Project 6</h2>
-                <p>
-                    Product 6 description goes here.
-                </p>
-                <a href="#">View Project on Github</a>
-                <div class="grid_overlay">
-                    <h3>Project Details</h3>
-                    <p>Description of the project's features.</p>
-                </div>
+                <h2>myFlix API</h2>
+                <p>A RESTful API built for the myFlix project, managing user authentication, movie data, and user profiles.</p>
+                <a href="https://github.com/Dbreazi/movie_api" target="_blank">View API on GitHub</a>
+                <p><strong>Tech Used:</strong> Node.js, Express, MongoDB, JWT, RESTful API, Mongoose</p>
+                <img src="img/database.png" alt="Api related illustration">
             </div>
         </div>
     </section>
@@ -128,18 +121,12 @@
     <footer class="page-footer">
         <p>Find me on</p>
         <div class="social-media">
-            <a href="https://github.com/Dbreazi" target="blank"> <img src="img/4747499_github_icon.svg"
-                    alt="Github logo"> </a>
-            <a href="https://twitter.com/?lang=en" target="blank"> <img
-                    src="img/5282551_tweet_twitter_twitterlogo_icon.svg" alt="Twitter logo"> </a>
-            <a href="https://linkedin.com/in/darioui/m/?lang=en" target="blank"> <img
-                    src="img/5305157_connection_linkedin_network_linkedinlogo_icon.svg" alt="linkedin logo"> </a>
+            <a href="https://github.com/Dbreazi" target="blank"> <img src="img/4747499_github_icon.svg" alt="Github logo"> </a>
+            <a href="https://twitter.com/?lang=en" target="blank"> <img src="img/5282551_tweet_twitter_twitterlogo_icon.svg" alt="Twitter logo"> </a>
+            <a href="https://linkedin.com/in/darioui/m/?lang=en" target="blank"> <img src="img/5305157_connection_linkedin_network_linkedinlogo_icon.svg" alt="linkedin logo"> </a>
         </div>
-        <a href="#">Back to top </a>
+        <a href="#">Back to top</a>
     </footer>
-
-    <script src="js/tota11y.min.js"></script>
-
 </body>
 
 </html>
