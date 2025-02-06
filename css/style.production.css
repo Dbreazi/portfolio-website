@@ -60,34 +60,25 @@
   
   /* Buttons */
   
-  button {
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    color: #003556;
-    background-color: #37b2ff;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid rgba(139, 236, 229, 0.2);
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s;
-  }
+
   
   .button {
     border: none;
     display: inline-block;
     font-family: inherit;
-    color: #003556;
-    background-color: #37b2ff;
+    color: #ffffff !important;
+    background-color: #ff7700;
     text-decoration: none;
+    font-kerning: auto;
+    font-weight: bold;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(139, 236, 229, 0.2);
     -webkit-transition: opacity 0.5s;
     -o-transition: opacity 0.5s;
     transition: opacity 0.5s;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   
   button:hover,
@@ -136,20 +127,24 @@
   
   /* Nav */
   
-  .navigation-list {
-    list-style-type: none;
-  }
-  
-  .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-  }
-  
-  .navigation-list_item--active {
-    font-weight: 500;
-    text-decoration: none;
-    color: #cb4f00 !important;
-  }
+  /* Navigation */
+.navigation-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.navigation-list a {
+  text-decoration: none;
+  font-size: large;
+  color: #004d7d;
+  font-weight: 500;
+}
+
+.navigation-list a:hover {
+  color: #37b2ff;
+}
   
   /* footer */
   
