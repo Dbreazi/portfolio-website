@@ -67,10 +67,10 @@
     display: inline-block;
     font-family: inherit;
     color: #ffffff !important;
-    background-color: #ff7700;
+    background-color: #d86500;
     text-decoration: none;
     font-kerning: auto;
-    font-weight: bold;
+    font-weight:300;
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid rgba(139, 236, 229, 0.2);
